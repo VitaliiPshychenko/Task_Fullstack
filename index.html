@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exam</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form id="form" class="formWithValidation" action="">
+      <div class="name">
+        <label for="firstName">First name</label>
+        <input type="text" name="first-name" value="" id="firstName" class="blank" pattern="[^'\x22]+">
+        <label for="lastName">Last name</label>
+        <input type="text" name="last-name" value="" id="lastName" pattern="[^'\x22]+">
+      </div>
+      <label for="date">Birthdate</label>
+      <input type="text" value="" name="date" id="date">
+      <div class="gender">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male" id="male" >
+        <label for="male">Famale</label>
+        <input type="radio" name="gender" value="famale" id="male" >
+      </div>
+      <select name="country" id="">
+        <option value="" selected></option>
+        <option value="Enland">Enland</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="USA">USA</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="email">Email</label>
+      <input type="email" name="email" value="" id="email" data-valdaton="email">
+      <p id="valid-text"></p>
+      <label for="password">Password</label>
+      <input type="password" name="password" value="" id="password">
+      <label for="address">Address</label>
+      <input type="text" name="address" value="" id="address" pattern="[^'\x22]+">
+      <p>Notes</p>
+      <textarea name="notes"></textarea>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </div>
+  
+
+
+  
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/common.js"></script>
+  
+</body>
+</html>
